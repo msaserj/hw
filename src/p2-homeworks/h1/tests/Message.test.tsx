@@ -19,7 +19,7 @@ test('find text "test message"', () => {
         <Message
             avatar=""
             name=""
-            message="test message"
+            message=""
             time=""
         />
     ))

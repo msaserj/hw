@@ -1,9 +1,42 @@
 .message {
     display: flex;
+    margin: 10px;
+    align-items: flex-end;
 }
 
 .avatar {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
+}
+
+.content {
+    padding: 5px;
+    border-radius: 8px 8px 8px 0;
+    background-color: #79f595;
+}
+
+.angel {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, #5b5b5b 15px, #79f595 0);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f4119;
+
+}
+
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.time {
+    text-align: right;
+    font-size: 15px;
+    color: #087c00;
 }
