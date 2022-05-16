@@ -1,3 +1,41 @@
-.someClass {
+.active-filter {
+    color: #087c00;
+}
 
+.affair {
+    display: flex;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: yellow;
+}
+
+.low {
+    color: green;
+}
+
+.button {
+    width: 50px;
+    margin: 10px;
+}
+
+.item {
+    width: 100px;
+    margin: 10px;
+}
+
+.button:active {
+    color: #79f595;
+}
+
+.button:focus {
+    outline: #087c00 solid 1px;
+}
+
+.active {
+    background-color: #79f595;
 }
