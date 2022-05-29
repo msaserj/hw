@@ -23,7 +23,6 @@ function HW4() {
         <div>
             <hr/>
             homeworks 4
-
             <div className={s.column}>
                 <SuperInputText
                     value={text}
@@ -36,9 +35,7 @@ function HW4() {
                 <SuperInputText
                     className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
-
                 {/*----------------------------------------------------*/}
-
                 <SuperButton>
                     default
                 </SuperButton>
