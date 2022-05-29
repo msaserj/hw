@@ -2,6 +2,12 @@
 
 }
 
-.error {
-    border: 1px solid red;
+.red {
+    border: 3px solid red;
+}
+.redspan {
+    color: darkred;
+}
+.spanblock {
+    height: 30px;
 }
