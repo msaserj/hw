@@ -2,7 +2,7 @@
   "name": "ignathomeworks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://msaserj.github.io/it-incubator-hw-ignat",
+  "homepage": "https://msaserj.github.io/it-incubator-homeworks-ignat",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
