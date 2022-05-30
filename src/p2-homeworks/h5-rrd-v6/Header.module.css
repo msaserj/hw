@@ -1,0 +1,32 @@
+.link {
+    text-decoration: none;
+    color: #79f595;
+    margin: 10px;
+}
+
+.link:hover {
+    color: #087c00;
+}
+.active {
+    color: #1f4119;
+}
+
+.block {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    background: #690000;
+    border-radius: 50%;
+}
+
+.header {
+    display: inline-flex;
+    width: 280px;
+    transition-duration: 500ms;
+    transform: translate(-230px);
+}
+
+.header:hover {
+    transition-duration: 800ms;
+    transform:  translate(0);
+}
