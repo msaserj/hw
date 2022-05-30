@@ -1,21 +1,21 @@
 .link {
     text-decoration: none;
-    color: #41a256;
+    color: #b3d7ff;
     margin: 10px;
 }
 
 .link:hover {
-    color: #0b7900;
+    color: #7187ff;
 }
 .active {
-    color: #1f4119;
+    color: #335eff;
 }
 
 .block {
     width: 25px;
     height: 25px;
     margin: 10px;
-    background: #690000;
+    background: #ff5c5c;
     border-radius: 50%;
 }
 

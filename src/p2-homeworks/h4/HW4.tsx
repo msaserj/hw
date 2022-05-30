@@ -22,8 +22,9 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <h3>homeworks 4</h3>
             <div className={s.column}>
+                {/*input with error*/}
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
@@ -32,24 +33,20 @@ function HW4() {
                     // spanClassName={s.testSpanError}
                 />
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
-                {/*----------------------------------------------------*/}
-                <SuperButton>
-                    default
-                </SuperButton>
+                {/*simple input*/}
+                <SuperInputText/>
 
+                {/*button default*/}
+                <SuperButton>default</SuperButton>
+
+                {/*button delete*/}
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
+                    onClick={showAlert}>
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
+                <SuperButton disabled>disabled</SuperButton>
 
                 {/*----------------------------------------------------*/}
 
@@ -64,12 +61,12 @@ function HW4() {
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}
             {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }

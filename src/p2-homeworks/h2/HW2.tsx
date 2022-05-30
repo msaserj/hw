@@ -43,7 +43,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            <h3>homeworks 2</h3>
 
             {/*should work (должно работать)*/}
             <Affairs
@@ -53,10 +53,10 @@ function HW2() {
                 filter={filter}
             />
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }

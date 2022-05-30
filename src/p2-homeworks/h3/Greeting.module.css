@@ -1,5 +1,11 @@
-.someClass {
 
+
+.greeting {
+ display: inline-grid;
+}
+.count {
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .red {
