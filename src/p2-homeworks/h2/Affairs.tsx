@@ -1,7 +1,7 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
-import s from "./Affairs.module.css"
+
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 

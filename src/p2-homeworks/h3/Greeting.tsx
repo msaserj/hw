@@ -1,5 +1,5 @@
 import React, {ChangeEvent} from 'react'
-import s from './Greeting.module.css'
+import css from './Greeting.module.css'
 import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
@@ -20,8 +20,8 @@ const Greeting: React.FC<GreetingPropsType> = (
 
 
     return (
-        <div className={s.flex}>
-            <div className={s.greeting}>
+        <div className={css.flex}>
+            <div className={css.greeting}>
                 <SuperInputText
                     value={name}
                     onChange={setNameCallback}
@@ -33,7 +33,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 <SuperButton onClick={addUser}>Add</SuperButton>
             </div>
 
-            <span className={s.count}>{totalUsers}</span>
+            <span className={css.count}>{totalUsers}</span>
 
         </div>
     )
