@@ -3,6 +3,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC} from "./bll/loadingReducer";
+import {DotedLoader} from "./SuperLoader/DotedLoader";
 
 function HW10() {
     // useSelector, useDispatch
@@ -15,7 +16,7 @@ function HW10() {
         // setTimeout
         setTimeout(()=> {
             dispatch(loadingAC(false))
-        }, 1500)
+        }, 50000)
         console.log('loading...')
     };
 
@@ -23,11 +24,16 @@ function HW10() {
         <div>
             <hr/>
             homeworks 10
-
             {/*should work (должно работать)*/}
             {loading
                 ? (
-                    <div>крутилка...</div>
+                    <DotedLoader
+                        large
+                        // Options:
+                        // default 30px dots - not required!!!
+                        // small 18px dots
+                        // large 60px dots
+                    />
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
