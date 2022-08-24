@@ -1,12 +1,20 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import SuperPuperDoubleSlider from "./common/c8-SuperDoubleRange/SuperPuperDoubleRange";
+
+
+
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
-    function onchangeRange (valueRange: number) {
-        setValue1(valueRange)
+    const [value1, setValue1] = useState<number>(0)
+    const [value2, setValue2] = useState<number>(100)
+
+    const minGap = 5;
+
+    const onChangeRangeHandler = ([value1, value2]: [number, number]) => {
+        setValue1(value1)
+        setValue2(value2)
     }
 
     return (
@@ -18,7 +26,8 @@ function HW11() {
             <div>
                 <span>{value1}</span>
                 <SuperRange
-                    onChangeRange={onchangeRange}
+                    value={value1}
+                    onChangeRange={(value) => setValue1(value)}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
@@ -39,6 +48,12 @@ function HW11() {
                 <SuperDoubleRange
                     // сделать так чтоб value1 и value2 изменялось
                 />
+                <SuperPuperDoubleSlider
+                    commonValue={[value1, value2]}
+                    onChangeRange={onChangeRangeHandler}
+                />
+
+
                 <span>{value2}</span>
             </div>
 
