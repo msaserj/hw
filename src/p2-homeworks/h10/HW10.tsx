@@ -28,7 +28,7 @@ function HW10() {
             {loading
                 ? (
                     <DotedLoader
-                        large
+                        small
                         // Options:
                         // default 30px dots - not required!!!
                         // small 18px dots
